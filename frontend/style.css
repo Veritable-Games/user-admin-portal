@@ -1,0 +1,101 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+  --border-color: #ddd;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Editor/Preview shared window styles */
+.content-window {
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.window-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.mode-indicator {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.edit-mode .mode-indicator {
+  background-color: #e74c3c;
+}
+
+.preview-mode .mode-indicator {
+  background-color: var(--secondary-color);
+}
+
+.window-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.window-content {
+  padding: 15px;
+  min-height: 300px;
+}
+
+/* User profile styles */
+.user-profile {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 30px;
+}
+
+.profile-sidebar {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.profile-content {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Forum integration styles */
+.forum-activity {
+  margin-top: 20px;
+}
+
+.activity-item {
+  padding: 15px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}
